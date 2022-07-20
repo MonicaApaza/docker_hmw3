@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+
+  nodeapi:
+    image: 'monikapaza/nodeapi:monica.apaza'
+    build:
+      context: .
+      dockerfile: node.dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - docknet
+
+networks:
+  docknet:
