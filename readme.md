@@ -1,4 +1,8 @@
 ```
+Note: In case SonarQube has errors set the following in powershell
+ wsl -d docker-desktop
+ sysctl -w vm.max_map_count=262144
+ 
 -- Gets the latest node image base for node
 FROM          node:alpine
 -- This is pair value to specify the author
